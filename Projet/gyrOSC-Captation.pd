@@ -1,0 +1,31 @@
+#N canvas 168 141 954 619 10;
+#X obj 286 222 kumquat quat2euler;
+#X obj 286 191 quatSmooth;
+#X obj 92 358 nbx 4 20 -99999 99999 0 0 empty empty yaw 30 70 0 20
+-262144 -1 -1 179.72 256;
+#X obj 286 257 unpack 0 0 0;
+#X obj 304 359 nbx 4 20 -99999 99999 0 0 empty empty roll 30 70 0 20
+-262144 -1 -1 7.55526 256;
+#X obj 493 359 nbx 4 20 -99999 99999 0 0 empty empty pitch 30 70 0
+20 -262144 -1 -1 -0.524791 256;
+#X obj 287 121 OSCrx 8002;
+#X obj 286 157 OSCparse /gyrosc/quat;
+#X obj 303 383 clip -60 0;
+#X obj 304 405 s roll;
+#X obj 495 408 s pitch;
+#X obj 92 402 s yaw;
+#X obj 91 382 clip 0 90;
+#X obj 496 386 clip 0 60;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 12 0;
+#X connect 3 0 2 0;
+#X connect 3 1 4 0;
+#X connect 3 2 5 0;
+#X connect 4 0 8 0;
+#X connect 5 0 13 0;
+#X connect 6 0 7 0;
+#X connect 7 0 1 0;
+#X connect 8 0 9 0;
+#X connect 12 0 11 0;
+#X connect 13 0 10 0;

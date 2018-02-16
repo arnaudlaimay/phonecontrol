@@ -43,7 +43,8 @@ Je vais tout d’abord me familiariser avec la transmission de messages OSC d’
 
 ETAPE 2
 
-Je suis entrain de confectionner deux patch pure data. L’un me permettant de recevoir les informations d’orientation du téléphone : pour l’instant Pitch, Yaw et Roll. Le deuxième relie ses données reçus pour les « Mapper » sur un synthétiseur avec effets.
+Je suis entrain de confectionner deux patch pure data. L’un me permettant de recevoir les informations d’orientation du téléphone : pour l’instant Pitch, Yaw et Roll (via GyrOSC). Le deuxième relie ses données reçus pour les « Mapper » sur un synthétiseur avec effets. 
+En parallèle je relie aussi TouchOSC avec le patch. 
 
 Les patch nécessite plusieurs bibliothèque d’objet pure data : cyclone, iemlib, comport etc...
 
