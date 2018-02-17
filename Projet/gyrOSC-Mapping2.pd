@@ -27,12 +27,12 @@
 #X obj 188 422 dac~;
 #X obj 187 394 *~;
 #X obj 494 497 hsl 150 20 0 1 0 1 empty empty Gain -2 -8 0 10 -261234
--1 -1 2700 0;
+-1 -1 9200 0;
 #X msg 294 376 \$1 50;
 #X obj 294 398 line~;
 #X obj 131 220 5voixfm;
 #X obj 73 322 hsl 128 20 100 15000 1 0 empty empty Passe-bas -2 -8
-0 10 -191407 -1 -1 11107 1;
+0 10 -191407 -1 -1 5836 1;
 #X obj 186 358 lop~;
 #X obj 37 450 spectre~;
 #X obj 32 644 s ratio;
@@ -41,15 +41,15 @@
 #X obj 18 790 s index3;
 #X obj 30 833 s index4;
 #X obj 92 613 hsl 150 15 0 6 0 0 empty rat RATIO -2 -8 0 10 -204800
--1 -1 3043 1;
+-1 -1 1042 1;
 #X obj 92 664 hsl 150 15 0 7 0 0 empty index11 INDEX1 -2 -8 0 10 -204786
--1 -1 1305 1;
+-1 -1 1845 1;
 #X obj 95 715 hsl 150 15 0 7 0 0 empty index22 INDEX2 -2 -8 0 10 -204786
--1 -1 1305 1;
+-1 -1 1235 1;
 #X obj 93 768 hsl 150 15 0 7 0 0 empty index33 INDEX3 -2 -8 0 10 -204786
--1 -1 1305 1;
+-1 -1 2065 1;
 #X obj 94 818 hsl 150 15 0 7 0 0 empty index44 INDEX4 -2 -8 0 10 -204786
--1 -1 1305 1;
+-1 -1 2129 1;
 #X obj 315 139 hsl 100 15 0 100 0 0 empty empty A -2 -8 0 10 -232576
 -1 -1 9900 1;
 #X obj 463 141 hsl 100 15 0 300 0 0 empty empty D -2 -8 0 10 -232576
@@ -121,9 +121,9 @@ index33 0.97 \; index44 1;
 1;
 #X obj 474 404 expr 1-$f1;
 #X obj 592 282 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -204786
--1 -1 800 1;
+-1 -1 4600 1;
 #X obj 594 353 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -261682
--1 -1 800 1;
+-1 -1 7600 1;
 #X floatatom 591 373 5 0 0 0 - - -, f 5;
 #X floatatom 589 321 5 0 0 0 - - -, f 5;
 #X text 389 216 Freeze the reverb;
@@ -214,8 +214,10 @@ index33 0.97 \; index44 1;
 #X obj 1062 98 expr 1-$f1;
 #X obj 927 80 *~;
 #X obj 1225 290 hsl 128 15 0 1 0 0 empty empty Mix_fuzz_wha -2 -8 0
-10 -262130 -1 -1 1400 1;
+10 -262130 -1 -1 5080 1;
 #X obj 793 304 zscale -60 0 0 1;
+#X obj 1267 225 loadbang;
+#X msg 1268 248 0.4;
 #X connect 0 0 1 0;
 #X connect 2 0 0 0;
 #X connect 3 0 4 0;
@@ -365,4 +367,6 @@ index33 0.97 \; index44 1;
 #X connect 129 0 128 1;
 #X connect 130 0 101 0;
 #X connect 130 0 102 0;
+#X connect 131 0 132 0;
+#X connect 132 0 129 0;
 #X coords 0 902 1 901 400 400 0;
