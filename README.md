@@ -50,3 +50,12 @@ Les patch nécessite plusieurs bibliothèque d’objet pure data : cyclone, ieml
 
 La communication entre le téléphone et pure data fonctionne bien. Je dois ajuster l’échelle des valeurs pour ne pas que cela devienne cacophonique. Il me reste aussi a perfectionner le système et ajouter une meilleur structure de contrôle d’effet.
 D’autre part je réfléchis à la manière avec laquelle je vais pouvoir créer des notes directement à partir du téléphone.
+
+
+
+ETAPE 3
+
+La transmission OSC et la synthèse fonctionne très bien. J'ai mélangé les data au niveaux du mapping pour mutiliplier les possiblitées sonores. J'ai ajouté un déclenchement grace aux données d'accelération du téléphone.
+J'ai redesigné mon patch pour qu'il soit plus simple à la lecture. J'ai aussi ajouté un déclenchement pour une sorte d'arpéggiateur que je vais surement modifier ces prochaines semaines. Je suis satisfait du rendu sonore.
+
+
