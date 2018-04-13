@@ -1,6 +1,6 @@
-#N canvas 0 22 1102 752 10;
-#X obj 108 146 hsl 128 15 0 127 0 1 \$0-polysaw-pitch-s \$0-polysaw-pitch-r
-PITCH 135 7 0 10 -262144 -1 -1 3300 1;
+#N canvas 231 249 1102 752 10;
+#X obj 109 143 hsl 128 15 0 127 0 1 \$0-polysaw-pitch-s empty PITCH
+135 7 0 10 -262144 -1 -1 1900 1;
 #X obj 320 467 pack f f f;
 #X obj 320 328 f;
 #X floatatom 320 350 5 0 0 0 - - -, f 5;
@@ -21,7 +21,7 @@ RELEASE 135 7 0 10 -262144 -1 -1 11000 1;
 #X obj 320 371 pack f f;
 #X obj 335 203 r \$0-polysaw-pitch-s;
 #X obj 320 83 threshold~ 0.9 0 0.9 0;
-#X floatatom 206 132 5 0 0 0 - - -, f 5;
+#X floatatom 40 159 5 0 0 0 - - -, f 5;
 #X obj 471 15 inlet~ PITCH CV;
 #X obj 320 47 inlet~ TRIG;
 #X obj 320 121 t b b b;
@@ -306,7 +306,7 @@ DTUNE 135 7 0 10 -262144 -1 -1 12700 1;
 ;
 #X obj 106 137 cnv 5 5 5 empty empty POLYSYNTH 0 0 0 12 -262144 -66577
 0;
-#X obj 175 137 cnv 5 5 5 empty \$0-instance-num 1 0 0 0 12 -262144
+#X obj 175 137 cnv 5 5 5 empty \$0-instance-num 0 0 0 0 12 -262144
 -66577 0;
 #X obj 106 113 bng 15 50 50 0 empty empty empty 17 7 0 10 -262144 -226533
 -1;
@@ -1023,6 +1023,7 @@ DTUNE 135 7 0 10 -262144 -1 -1 12700 1;
 #X obj 488 640 *~ 0.5;
 #X obj 836 130 spigot;
 #X obj 880 130 spigot;
+#X obj 14 128 r piiitch;
 #X connect 0 0 17 0;
 #X connect 1 0 9 0;
 #X connect 2 0 3 0;
@@ -1080,4 +1081,5 @@ DTUNE 135 7 0 10 -262144 -1 -1 12700 1;
 #X connect 59 0 57 0;
 #X connect 60 0 58 0;
 #X connect 61 0 60 0;
+#X connect 64 0 0 0;
 #X coords 0 -1 1 1 205 165 2 100 100;
