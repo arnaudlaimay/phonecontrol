@@ -1,0 +1,2 @@
+#N canvas 277 390 670 583 10;
+#X obj 99 104 gyrOSCMapping8forgraphonparent;
